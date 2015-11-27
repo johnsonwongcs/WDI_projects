@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.1/angular.js"></script>
+    <script src="../js/todos.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<!--1) hook up ng-app and ng-controller-->
+<body ng-app="todoApp", ng-controller="TodoCtrl as ctrl">
+
+<div class="container">
+    <h1 class="text-center">todos</h1>
+
+    <ul class="list-group">
+        <li class="list-group-item">
+            <!-- 2) use ng-submit to add an action to the submit event-->
+            <form ng-submit="ctrl.addTodo()">
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button class="btn btn-primary" type="submit">Add</button>
+                    </span>
+                    <!-- 3) use ng-model to bind this to a ctrl variable -->
+                    <input class="form-control" placeholder="add a todo" ng-model="ctrl.newText">
+                </div>
+            </form>
+        </li>
+
+        <!-- 4) use ng-repeat to iterate over todos
+             5) use ng-show to decide which todos to show (remember filters?)-->
+        <li class="list-group-item" ng-repeat="todo in ctrl.todos" ng-show="ctrl.selectedFilter.showTodo(todo)">
+            <!-- 6) use ng-class to to dynamically class this element-->
+            <label ng-class="{done:todo.done}">
+                <!-- 7) use ng-model to bind the checkbox to a bool-->
+                <input type="checkbox" ng-model="todo.done">
+                <!-- 8) use Angular evaluation to populate this with todo text-->
+                {{todo.text}}
+            </label>
+        </li>
+    </ul>
+
+    <!-- 9) use ng-options to populate dropdown
+         10) use ng-model to bind select to a ctrl variable-->
+    <select ng-options="filter.label for filter in ctrl.filters", ng-model="ctrl.selectedFilter"></select>
+    <!-- 11) use ng-click to define click event
+         12) use ng-disabled to turn off the button -->
+    <button  class="pull-right btn btn-default" ng-click="ctrl.clearComplete()" ng-disabled="ctrl.isClearDisabled()">Clear Complete</button>
+
+</div>
+
+</body>
+</html>
