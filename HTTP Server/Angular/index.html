@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script type="text/javascript" src="angular.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</head>
+
+<body ng-app="App" ng-controller="mainCtrl as Ctrl">
+<button ng-click="Ctrl.msg()">Message</button>
+<button ng-click="Ctrl.msg1()">Another Message</button>
+<div ng-model="Ctrl.message">{{Ctrl.message}}</div>
+</body>
+
+</html>

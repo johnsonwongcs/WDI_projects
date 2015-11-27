@@ -1,0 +1,75 @@
+
+/* Don't change this rule */
+span {
+	border: 2px solid black;
+	display: inline-block;
+	padding: 10px;
+}
+
+/* Only change border properties on the following */
+
+.a {
+	border: 15px solid #ffc10c;
+}
+
+.b {
+	border: 3px dashed red;
+}
+
+.c {
+	border-bottom: 5px solid black;
+	border-right: 5px solid black;
+	border-left: 5px solid grey;
+	border-top: 5px solid grey;
+}
+
+.d {
+	border-bottom: 5px solid grey;
+	border-right: 5px solid grey;
+	border-left: 5px solid black;
+	border-top: 5px solid black;
+}
+
+.e {
+	border-top: 3px double grey;
+	border-right: 3px dotted green;
+	border-bottom: 3px double red;
+	border-left: 3px dashed red;
+}
+
+
+/* Only change padding and margin properties on the following */
+
+.f 
+{
+	height: 350px;
+}
+
+.g {
+	margin: 50px auto 200px auto;
+}
+
+.h {
+	padding:0;
+}
+
+.i {
+	height: 5px;
+	margin: 30px 10px 0px 10px;
+	padding: 1px 6px 18px 12px;
+}
+
+.j {
+	height: 8px;
+	margin: auto 8px;
+	padding: 8px 8px;
+}
+
+.k {
+
+}
+
+.l {
+	padding: 0px 0px 10px 6px;
+	margin: 25px 0px 0px 1px;
+}

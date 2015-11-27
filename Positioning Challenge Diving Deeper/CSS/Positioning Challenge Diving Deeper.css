@@ -1,0 +1,59 @@
+body div {
+	height: 204px;
+	width: 550px;
+	border: 3px solid blue;
+	margin-bottom: 20px;
+}
+div div {
+	height: 100px;
+	width: 100px;
+	background-color: orange;
+	border: 1px solid black;
+}
+.a1 {
+	float: right;
+}
+.b1 {
+	float: left;
+}
+.c1 {
+	float: right;
+}
+.d1 {
+	float: left;
+}
+.row2{
+	position: relative;
+}
+.a2 {
+	float:left;
+	margin: 0;
+}
+.d2 {
+	clear:left;
+	margin: 0;
+}
+.c2 {
+	height: 20px;
+	width: 20px;
+	float:left;
+	margin: 0px 0px 0px 10px;
+}
+.row3 {
+	position: relative;
+}
+.row3 div {
+	position: absolute;
+}
+.b3 {
+	margin-top: -60px;
+	margin-left: 130px;
+}
+.c3 {
+	margin-top: 40px;
+	margin-left: 480px;
+}
+.d3 {
+	margin-top: -180px;
+	margin-left: 280px;
+}

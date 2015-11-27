@@ -1,0 +1,15 @@
+body {
+	background-color: #E8D2B3;
+}
+.header {
+	padding: 20px 0;
+	height: 100px;
+	margin-bottom: 40px ;
+	border-bottom: 2px solid #FFF6D4;
+}
+h1 {
+	text-align: center;
+}
+h1, h3 {
+	color: #759AFF;
+}

@@ -1,0 +1,31 @@
+h1 {
+	padding: 0;
+	margin: 0;
+	border: 1px solid black;
+}
+h2 {
+	padding: 0 0 0 50px;
+	margin: 20px 20px 20px 20px;
+	border: 3px dashed green;
+}
+h3 {
+	padding: 40px 40px 40px 300px;
+	margin: 20px 300px 20px 300px;
+	border: 5px dotted red;
+}
+.paragraph1 {
+	padding: 0;
+	margin: 0;
+	border: 10px double #bbbbbb;
+}
+.paragraph2 {
+	padding: 0 20px 20px 100px;
+	margin: 50px 0 20px 400px;
+	border: 20px ridge violet;
+}
+.paragraph3 {
+	padding: 50px 50px 0 50px;
+	margin: 100px 500px 100px 500px;
+	border: 20px groove #FFFF00;
+	border-radius: 20px;s
+}

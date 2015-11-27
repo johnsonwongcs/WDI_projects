@@ -1,0 +1,12 @@
+.form-group {
+	margin: 20px;
+	padding: 20px;
+	text-align: right;
+}
+.col-sm-6 {
+	text-align: left;
+}
+.submitBtnContainer {
+	text-align: left;
+	padding-left: 150px;
+}

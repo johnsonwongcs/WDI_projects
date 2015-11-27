@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.1/angular.js"></script>
+  <script src="app.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body ng-app="todoApp" ng-controller="TodoCtrl as ctrl">
+  
+  <div class="container">
+    <h1 class="text-center">todos</h1>
+    <ul class="list-group">
+      
+      <li class="list-group-item">
+        <!--TODO #4: 
+          Create a new todo using the text from the "add a todo" 
+          input whenever the add button is clicked or the user 
+          presses the Enter key.
+        -->
+        <form>
+          <div class="input-group">
+            <span class="input-group-btn">
+              <button class="btn btn-primary" type="submit" ng-click="ctrl.addTodo(ctrl.todo)">Add</button>
+            </span>
+            <input class="form-control" placeholder="add a todo" ng-model="ctrl.todo">
+          </div>  
+        </form>
+      </li>
+      
+      <!--TODO #1: 
+        Repeat this list element for each todo in the controller's 
+        list of todos
+      -->
+      <div>
+	      <li class="list-group-item" ng-repeat="todo in ctrl.todos | filter : {done: false}">
+	      	
+	        <!--TODO #3: 
+	          set the class of this label to "done" when the todo's
+	          done property is true.
+	        -->
+	        <label ng-class="{'done': todo.done}">
+	          <!--TODO #2: Hook up this checkbox to a todo's done property-->
+	          <input type="checkbox" ng-model="todo.done">
+	          {{todo.text}}
+	          <!--TODO #2: Show the text for a todo here-->
+	        </label>
+	      </li>
+      </div>
+      
+    </ul>
+
+    <!--TODO #6: 
+      Show the All, Active and Complete filters from the controller.
+      Only show the corresponding type of todo based on what is 
+      selected here.
+    -->
+    <select></select>
+    
+    <!--TODO #5: 
+      When this button is clicked remove any todos form the list of 
+      todos where done is set to true. Disable this button if 
+      there are no complete todos.
+    -->
+    <button class="pull-right btn btn-default">Clear Complete</button>
+
+  </div>
+
+</body>
+</html>

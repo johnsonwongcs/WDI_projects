@@ -1,0 +1,50 @@
+body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+}
+.container {
+    margin:0 auto;
+    max-width:960px;
+    padding-bottom:250px;
+}
+.jumbotron {
+    background-color:#3498db;
+}
+.jumbotron h1 {
+    font-size:80px;
+}
+.jumbotron h2, .jumbotron h1 {
+    font-weight: 100;
+}
+.content {
+    text-align: center;
+    padding: 50px;
+}
+.features {
+    float:left;
+    width:50%;
+    background-color: #9b59b6;
+}
+.features-content ul, .resources-content ul {
+    line-height: 30px;
+}
+.features-heading, .resources-heading {
+    text-decoration: underline;
+}
+.resources {
+    float:left;
+    width: 50%;
+    background-color: #2ecc71;
+}
+.resources-content, .features-content {
+    padding: 20px;
+}
+.quotes, .content-image, .jumbotron  {
+    width: 100%;
+}
+.quotes-heading, .resources-content ul a, .resources-content ul, .content, .features-content ul, .features-heading, .resources-heading {
+    color:white;
+}
+.color {
+    color:#9b59b6;
+}

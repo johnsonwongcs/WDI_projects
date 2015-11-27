@@ -1,0 +1,32 @@
+h1 {
+	font-size: 40px;
+	color: blue;
+}
+.differentFont {
+	font-family: Verdana;
+}
+.red {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+}
+.yellow {
+	width: 200px;
+	height: 100px;
+	background-color: yellow;
+	border: 3px solid green;
+}
+ol {
+	list-style-type: upper-roman;
+}
+ul {
+	list-style-type: square;
+}
+.boldBlueText {
+	font-weight: bold;
+	color: blue;
+}
+.redText {
+	font-weight: normal;
+	color: red;
+}

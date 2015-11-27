@@ -1,0 +1,41 @@
+.blueLine {
+	border-bottom: 1px solid blue;
+	height: 10px;
+}
+.redLine {
+	border-bottom: 4px solid red;
+	height: 10px;
+}
+.greenLine {
+	border-bottom: 3px solid green;
+	height: 10px;
+	margin-bottom: 10px;
+}
+.parent {
+	height: 170px;
+	margin-bottom: 10px;
+}
+.overlap {
+	display: inline-block;
+	height: 170px;
+	width: 500px;
+	border: 1px solid green;
+}
+.overlap1 {
+	background-color: pink;
+	margin-right: -150px;
+}
+.overlap2 {
+	background-color: violet;
+}
+table {
+	border: 1px solid black;
+}
+th {
+	height:20px;
+	width:100px;
+	border: 1px solid black;
+}
+td {
+	border: 1px solid black;
+}
